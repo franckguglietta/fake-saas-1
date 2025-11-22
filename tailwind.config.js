@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -39,19 +38,7 @@ const config: Config = {
         error: "var(--error)",
         info: "var(--info)",
       },
-      fontFamily: {
-        sans: ["var(--font-sans)"],
-        mono: ["var(--font-mono)"],
-      },
-      borderRadius: {
-        DEFAULT: "var(--radius)",
-        sm: "var(--radius-sm)",
-        lg: "var(--radius-lg)",
-        full: "var(--radius-full)",
-      },
     },
   },
   plugins: [],
-};
-
-export default config;
+}

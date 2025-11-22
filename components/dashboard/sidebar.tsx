@@ -29,6 +29,7 @@ export function Sidebar() {
     <aside className="fixed left-0 top-0 z-40 h-screen w-64 border-r border-border bg-surface">
       <div className="flex h-full flex-col">
         {/* Logo */}
+        <Link href="/" className="flex items-center gap-2 group"></Link>
         <div className="flex h-16 items-center gap-2 border-b border-border px-6">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
             <Zap className="w-5 h-5 text-white" />
